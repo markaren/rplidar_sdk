@@ -41,4 +41,8 @@ target_include_directories(rplidar
         ${CMAKE_CURRENT_SOURCE_DIR}/dataunpacker/unpacker
 )
 
+if (UNIX)
+    target_link_libraries(rplidar PRIVATE pthread
+)
+
 set_target_properties(rplidar PROPERTIES POSITION_INDEPENDENT_CODE ON)
