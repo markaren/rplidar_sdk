@@ -42,7 +42,7 @@ target_include_directories(rplidar
 )
 
 if (UNIX)
-    target_link_libraries(rplidar PRIVATE pthread
-)
+    target_link_libraries(rplidar PRIVATE pthread)
+endif ()
 
 set_target_properties(rplidar PROPERTIES POSITION_INDEPENDENT_CODE ON)
