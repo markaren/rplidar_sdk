@@ -1,12 +1,2 @@
-.vscode
-.vs
-*.user
-*.aps
-obj
-output
-*.ipch
-*.sdf
-sdk/obj
-**/ipch
-*.obj
-*.o
+cmake-build-*
+.idea
